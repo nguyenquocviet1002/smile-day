@@ -45,6 +45,29 @@
       margin-left: 20px;  
     }
   }
+  @media (max-width: 992px){
+    &__inner{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__right{
+      width: 80%;
+    }
+    &__btn{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media (max-width: 767px){
+    padding-bottom: 20px;
+    &__left{
+      width: 100%;
+      max-width: 250px;
+    }
+    &__right{
+      width: 100%;
+    }
+  }
 }
 
 .screen3{
@@ -89,6 +112,7 @@
     }
   }
   @media (max-width: 767px){
+    padding: 20px 0;
     .swiper{
       width: 80%;
     }
