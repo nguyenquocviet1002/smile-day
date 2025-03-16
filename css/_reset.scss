@@ -1,0 +1,428 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1.3;
+  color: #000;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+:focus {
+  outline: 0;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  clear: both;
+  display: block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: auto;
+}
+
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1290px;
+  }
+}
+html{
+  scroll-behavior: smooth;
+}
+html, body{
+  font-size: 16px;
+  font-family: 'SVN-Gilroy';
+  @media (max-width: 991px){
+    font-size: 15px;
+  }
+}
+input{
+  font-family: 'SVN-Gilroy';
+}
+@font-face {
+  font-family: 'SVN-Gilroy';
+  src: url('../fonts/SVN-Gilroy.woff2') format('woff2'),
+      url('../fonts/SVN-Gilroy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Gilroy';
+  src: url('../fonts/SVN-GilroyItalic.woff2') format('woff2'),
+      url('../fonts/SVN-GilroyItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Gilroy';
+  src: url('../fonts/SVN-GilroyMedium.woff2') format('woff2'),
+      url('../fonts/SVN-GilroyMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Gilroy';
+  src: url('../fonts/SVN-GilroyXBold.woff2') format('woff2'),
+      url('../fonts/SVN-GilroyXBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.button-1{
+  background-color: #ff0000;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 55px;
+  font-weight: bold;
+  width: fit-content;
+  margin: 0 auto;
+  border: 2px solid #00eaf3;
+  box-shadow: 0 0 10px 0 #00fffc;
+  cursor: pointer;
+  @media (max-width: 767px){
+    padding: 7px 20px;
+  }
+}
+
+@keyframes opac {
+  from {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+@keyframes modalbox {
+  0% {
+      top: -250px;
+      opacity: 0
+  }
+
+  100% {
+      top: 0;
+      opacity: 1
+  }
+}
+
+section[id] {
+  scroll-margin-top: 0px;
+}
+
+.modal,.modal-box {
+  z-index: 900
+}
+
+.modal {
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,.7);
+  overflow: auto;
+  animation: opac .3s
+}
+
+.modal-video {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%
+}
+
+.modal-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none
+}
+
+.modal-close {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+  float: right;
+  cursor: pointer
+}
+
+.modal-closePic {
+  font-family: Verdana,sans-serif;
+  color: #ddd;
+  text-shadow: none;
+  opacity: 1;
+  border-radius: 0 0 0 8px;
+  background: rgba(0,0,0,.6);
+  transition: .3s;
+  width: 44px;
+  height: 44px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 99991
+}
+
+@media(max-width: 414px) {
+  .modal-closePic {
+      background:rgba(0,0,0,.5);
+      width: 35px;
+      height: 35px;
+      font-size: 18px
+  }
+}
+
+.modal-closePic:hover {
+  background-color: #000
+}
+
+.modal-bg {
+  content: "";
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: .6s;
+  z-index: 99
+}
+
+.modal-box {
+  position: relative;
+  max-width: 600px;
+  margin: 0 15px
+}
+
+.modal-box-video {
+  width: 65%;
+  max-width: 65%;
+  margin: 0 auto
+}
+
+@media(max-width: 414px) {
+  .modal-box-video {
+      max-width:100%;
+      width: 100%;
+      margin: 0;
+      padding: 43px 10px
+  }
+}
+
+.modal-box-img img {
+  max-width: 100%
+}
+
+@media(max-width: 414px) {
+  .modal-box-img img {
+      width:100%;
+      margin: 0
+  }
+}
+
+.modal-box-live {
+  max-width: 90%;
+  width: 267px
+}
+
+@media(max-width: 414px) {
+  .modal-box-live {
+      margin:50px auto 0
+  }
+}
+
+.modal-header {
+  padding: 10px 20px;
+  color: #333;
+  background: #fff;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid #e9ecef
+}
+
+@media(max-width: 414px) {
+  .modal-header {
+      padding:10px 20px
+  }
+}
+
+.modal-title {
+  font-size: 20px
+}
+
+.modal-body {
+  background: #fff;
+  padding: 15px 20px;
+  line-height: 26px;
+  border-radius: 0 0 4px 4px
+}
+
+.animate-pop {
+  animation-name: modalbox;
+  animation-duration: .4s;
+  animation-timing-function: cubic-bezier(0, 0, 0.3, 1.6)
+}
+
+@keyframes modalbox {
+  0% {
+      top: -250px;
+      opacity: 0
+  }
+
+  100% {
+      top: 0;
+      opacity: 1
+  }
+}
