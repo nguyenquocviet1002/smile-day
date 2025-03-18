@@ -159,50 +159,22 @@ html[xmlns] .clearfix {
     max-width: 1290px;
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 html{
   scroll-behavior: smooth;
 }
 html, body{
   font-size: 16px;
-  font-family: 'SVN-Gilroy';
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
   @media (max-width: 991px){
     font-size: 15px;
   }
 }
 input{
-  font-family: 'SVN-Gilroy';
-}
-@font-face {
-  font-family: 'SVN-Gilroy';
-  src: url('../fonts/SVN-Gilroy.woff2') format('woff2'),
-      url('../fonts/SVN-Gilroy.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'SVN-Gilroy';
-  src: url('../fonts/SVN-GilroyItalic.woff2') format('woff2'),
-      url('../fonts/SVN-GilroyItalic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'SVN-Gilroy';
-  src: url('../fonts/SVN-GilroyMedium.woff2') format('woff2'),
-      url('../fonts/SVN-GilroyMedium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'SVN-Gilroy';
-  src: url('../fonts/SVN-GilroyXBold.woff2') format('woff2'),
-      url('../fonts/SVN-GilroyXBold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+  font-family: "Nunito", sans-serif;
 }
 
 .button-1{

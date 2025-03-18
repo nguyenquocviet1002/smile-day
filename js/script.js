@@ -61,12 +61,12 @@ const funcDragDoctor_knhd_1_0_0 = (element) => {
 
 funcDragDoctor_knhd_1_0_0('.screen4__list');
 
-document.querySelector('.screen4__btn').addEventListener('click', () => {
-  document.querySelector('#modal-pop').style.display = 'flex';
-});
-document.querySelector('.modal-bg').addEventListener('click', () => {
-  document.querySelector('#modal-pop').style.display = 'none';
-});
-document.querySelector('.modal-close').addEventListener('click', () => {
-  document.querySelector('#modal-pop').style.display = 'none';
-});
+// document.querySelector('.screen4__btn').addEventListener('click', () => {
+//   document.querySelector('#modal-pop').style.display = 'flex';
+// });
+// document.querySelector('.modal-bg').addEventListener('click', () => {
+//   document.querySelector('#modal-pop').style.display = 'none';
+// });
+// document.querySelector('.modal-close').addEventListener('click', () => {
+//   document.querySelector('#modal-pop').style.display = 'none';
+// });
