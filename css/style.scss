@@ -54,6 +54,9 @@
       height: 30px;
       margin-left: 20px;  
     }
+    span{
+      line-height: 1;
+    }
   }
   @media (max-width: 992px){
     &__inner{
@@ -109,12 +112,13 @@
     font-size: 2.5rem;
     font-weight: 700;
     color: #0081f5;
+    line-height: 1.2;
   }
   &__headSub{
     text-align: center;
     font-size: 1.5rem;
     color: #1eb7ff;
-    margin: 5px 0;
+    margin: 0 0 15px;
     font-weight: 500;
   }
   &__slider{
@@ -122,7 +126,7 @@
   }
   &__desc{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #595b61;
   }
   .swiper {
@@ -201,6 +205,9 @@
       width: 30px;
       height: 30px;
       margin-left: 20px;  
+    }
+    span{
+      line-height: 1;
     }
   }
   &__list{
@@ -446,7 +453,7 @@
   }
   &__head{
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-weight: 700;
     border-left: 2px solid #000;
     padding-left: 10px;
@@ -685,7 +692,7 @@
     width: 30%;
     background-color: rgb(255 255 255 / 70%);
     margin-left: 150px;
-    padding: 30px 5px;
+    padding: 30px 10px;
   }
   &__head{
     text-transform: uppercase;
@@ -701,7 +708,7 @@
   }
   &__group{
     margin-bottom: 10px;
-    padding: 0 20px;
+    padding: 0 0px;
     &.error{
       input{
         border-color: red;
@@ -725,16 +732,17 @@
   }
   &__submit{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
     input{
+      text-transform: uppercase;
       background-color: #1d3072;
       color: #fff;
       border: none;
       border-radius: 55px;
-      padding: 7px 20px;
-      font-size: 1.4rem;
+      padding: 10px 20px 7px;
+      font-size: 1.2rem;
       font-weight: 600;
-      line-height: 1.2;
+      line-height: 1;
       cursor: pointer;
       &:disabled{
         filter: grayscale(1);

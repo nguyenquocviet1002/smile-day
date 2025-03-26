@@ -122,6 +122,7 @@ const items9 = document.querySelectorAll('.screen9__item');
 items9.forEach(item => {
   item.addEventListener('click', () => {
     const id = item.getAttribute('data-video');
+    item.querySelector('.screen9__box').innerHTML = `<iframe src="https://www.youtube.com/embed/${id}?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
   })
 })
 
