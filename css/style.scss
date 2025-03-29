@@ -612,6 +612,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+    display: none;
   }
   &__service{
     color: #0081f5;
